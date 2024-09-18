@@ -1,10 +1,10 @@
 data "aws_ami" "ubuntu_24" {
   most_recent = true
-  owners      = ["099720109477"]  # ID del propietario de las AMIs de Ubuntu
+  owners      = ["099720109477"] # ID del propietario de las AMIs de Ubuntu
 
   filter {
     name   = "name"
-    values = ["amazon/ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-*"]
+    values = ["ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-*"]
   }
 
   filter {
